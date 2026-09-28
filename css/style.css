@@ -1,0 +1,247 @@
+/*======================== 
+1. Global layout / container 
+==========================*/
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    /* background-color: darkgoldenrod; */
+}
+    
+
+body{
+    margin: 0 20px 0 20px;
+}
+
+/*======================== 
+2. header dan navbar 
+==========================*/
+.aether_tagline{
+    font-weight: normal;
+    color: rgb(189, 179, 179);
+}
+
+.brand{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+    
+}
+
+
+.list{
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+.list li{
+    font-size: large;
+}
+
+.list li:nth-of-type(1){
+    flex-grow: 0.5;
+    /* background-color: black; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    
+
+    padding: 5px 0;
+}
+
+.list li:nth-of-type(7){
+    flex-grow: 1;
+    /* background-color: brown; */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/*======================== 
+3. main dan section
+==========================*/
+
+main{
+    background-color: rgb(250, 250, 250);
+    margin:50px 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 300px; */
+}
+
+.hero{
+    margin-top: 30px;
+    background-color: rgb(9, 11, 34);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 30px 25px 20px 25px;
+    border-radius: 30px;
+}
+
+#digital{
+    background-color: rgb(65, 59, 70);
+    color: rgb(191, 166, 253);
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* width: 500px; */
+}
+
+article span:nth-of-type(2){
+    color: white;
+}
+
+.hero article:nth-of-type(1) {
+    justify-self: flex-start;
+    flex-grow: 1;
+}
+
+.hero article:nth-of-type(2) {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+#button{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 8px 0;
+}
+
+#button button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+main > section:nth-of-type(2){
+    
+    align-self: flex-start;
+}
+
+main > section:nth-of-type(3){
+    align-self: flex-start;
+}
+
+main > section:nth-of-type(4){
+    align-self: flex-start;
+}
+
+main > section:nth-of-type(5){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+}
+
+
+
+.card{
+    width: 100%;
+    border: 2px;
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    
+    gap: 60px;
+}
+
+.card div{
+    background-color: rgb(240, 241, 241);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 180px;
+    flex-shrink: 0;
+    flex: 1;
+
+    border-radius: 5px;
+}
+
+.service_card div{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    flex:1 1 250px;
+    padding: 20px 20px ;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(233, 233, 233);
+}
+
+.statystics{
+    width: 100%;
+    border: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 190px;
+}
+
+@media (max-width: 768px) {
+    .list ,
+    .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar_list {
+        width: 100%;
+    }
+
+    .hero ,
+    .statystics{
+        flex-direction: column;
+        align-items: center;
+    }
+}
