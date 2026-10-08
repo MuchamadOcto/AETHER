@@ -16,9 +16,6 @@ header{
 }
     
 
-body{
-    margin: 0 20px 0 20px;
-}
 
 /*======================== 
 2. header dan navbar 
@@ -187,7 +184,33 @@ main > section:nth-of-type(5){
     flex: 1;
 }
 
+.feature_nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: brown; */
+    width: 100%;
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 
+.feature li{
+    background-color: rgb(240, 241, 241);
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 180px;
+    flex-shrink: 0;
+    flex: 1;
+    height: 25px;
+    width: 180px;
+    border-radius: 20px;
+    font-size: 12px;
+}
 
 .card{
     width: 100%;
@@ -200,6 +223,21 @@ main > section:nth-of-type(5){
 }
 
 .card div{
+    background-color: rgb(240, 241, 241);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 180px;
+    flex-shrink: 0;
+    flex: 1;
+
+    border-radius: 5px;
+}
+
+
+
+.card ul{
     background-color: rgb(240, 241, 241);
     padding: 20px;
     display: flex;
