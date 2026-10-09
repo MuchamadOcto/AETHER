@@ -145,6 +145,15 @@ article span:nth-of-type(2){
     flex-grow: 2;
 }
 
+.feature li:nth-child(1){
+    background-color: rgb(191, 166, 253);
+}
+.feature_nav li:hover{
+    background-color: rgb(191, 166, 253);
+    cursor: pointer;
+    color: white;
+}
+
 #button{
 
     display: flex;
@@ -191,13 +200,14 @@ main > section:nth-of-type(5){
     /* background-color: brown; */
     width: 100%;
 }
-.feature{
+
+.feature_list{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.feature li{
+.feature_list li{
     background-color: rgb(240, 241, 241);
     /* padding: 20px; */
     display: flex;
@@ -211,6 +221,19 @@ main > section:nth-of-type(5){
     border-radius: 20px;
     font-size: 12px;
 }
+
+.feature_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+}
+
+
 
 .card{
     width: 100%;
@@ -251,6 +274,16 @@ main > section:nth-of-type(5){
 }
 
 .service_card div{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    flex:1 1 250px;
+    padding: 20px 20px ;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(233, 233, 233);
+}
+
+.feature_card div{
     background-color: rgb(255, 255, 255);
     height: 100px;
     flex:1 1 250px;
