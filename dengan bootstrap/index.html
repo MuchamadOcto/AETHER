@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="my-container">
+    <div class="container">
         <header>
             <a href="home.html" class="brand">
                 <h1 class="aether">AETHER&mdash;HOME</h1>
@@ -21,19 +21,14 @@
             </a>
                 
             <nav class="navbar_list">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/HTML5.png" alt="Logo HTML"></a>
-                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="list">
-<<<<<<< HEAD:index.html
-                    <!-- <li class="logo">
-                            <a href="index.html"><img src="assets/HTML5.png" alt="Logo HTML"></a> 
-                        </li> -->
-=======
                         <li class="logo">
                             <a href="home.html"><img src="assets/HTML5.png" alt="Logo HTML"></a> 
                         </li>
->>>>>>> 7dce17fa8ee6957a3a904261347633ad4d07be71:dengan bootstrap/index.html
                         <li>
                             <a href="platform.html">Platform</a>
                         </li>
@@ -49,12 +44,14 @@
                         <li>
                             <a href="contact.html">Contact</a>
                         </li>
+                        <li>
+                            <button onclick="window.location.href='started.html'">GET STARTED</button>
+                        </li>
                     </ul>
-                    <button onclick="window.location.href='started.html'" style="margin-right: 20px;">GET STARTED</button>
                 </div>
             </nav>
         </header>
-        <main class="main">
+        <main>
             
             <!-- 1 -->
             <section class="hero">
