@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER</title>
+
+    <!-- 1. memanggil framework bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!--2. memanggil reset untuk menghapus default browser -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--3. memanggil style css untuk mendesain gaya web nya -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container bg-primary">
+            <div class="row">
+                <div class="col">
+                    <h1 class="aether">AETHER&mdash;HOME</h1>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                        <h4 class="aether_tagline">High-fidelity visual target &bull; desktop reference</h4>
+                    </div>
+            </div>
+        </div>
+
+        <!-- menu bar -->
+        <nav class="container navbar navbar-expand-lg bg-body-tertiary justify-content-center ">
+            <div class="container-fluid d-flex justify-content-around">
+
+                <!-- membuat supaya menghilang menunya digantikan dengan burger -->
+                 <!-- menggunakan "data-bs-toggle" dan "data-bs-target" (sebagai target yang dituju)  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- memanggil burger -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/HTML5.png" alt="logo html">
+                </a>
+                
+                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav gap-4" >
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="platform.html">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#get_started" aria-controls="get_started" aria-expanded="false" aria-label="Toggle button">
+                        <!-- memanggil titik 3 -->
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="get_started">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>    
+        </nav>
+    </header>  
+
+    <a href="index.html">back</a>
+        
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>        
+</body>
+</html>
