@@ -12,6 +12,7 @@ header{
     max-width: 1500px;
     margin-inline: auto;
     padding-inline: 20px;
+    margin: 0 ;
     /* background-color: darkgoldenrod; */
 }
     
@@ -64,12 +65,13 @@ header{
 }
 
 .list li:nth-of-type(7){
-    flex-grow: 1;
+    flex-grow: 0.5;
     /* background-color: brown; */
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
 }
 
 
@@ -88,7 +90,7 @@ header{
 
 main{
     background-color: rgb(250, 250, 250);
-    margin:50px 0;
+    /* margin:50px 0; */
     padding: 20px;
 
     display: flex;
@@ -312,6 +314,7 @@ main > section:nth-of-type(5){
     height: 50px;
 }
 
+/* 2. HP Landscape / Tablet Kecil */
 @media (max-width: 768px) {
     .list ,
     .brand {
