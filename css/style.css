@@ -11,6 +11,7 @@ header{
     flex-direction: column;
     max-width: 1500px;
     margin-inline: auto;
+    width: 100%;
     padding-inline: 20px;
     margin: 0 ;
     /* background-color: darkgoldenrod; */
@@ -235,15 +236,12 @@ main > section:nth-of-type(5){
     flex: 1;
 }
 
-
-
 .card{
     width: 100%;
     border: 2px;
     display: flex;
     /* flex-direction: row; */
     /* align-items: center; */
-    
     gap: 60px;
 }
 
@@ -256,11 +254,8 @@ main > section:nth-of-type(5){
     flex-basis: 180px;
     flex-shrink: 0;
     flex: 1;
-
     border-radius: 5px;
 }
-
-
 
 .card ul{
     background-color: rgb(240, 241, 241);
@@ -278,17 +273,7 @@ main > section:nth-of-type(5){
 .service_card div{
     background-color: rgb(255, 255, 255);
     height: 100px;
-    flex:1 1 250px;
-    padding: 20px 20px ;
-    border-radius: 5px;
-    border: 2px solid;
-    border-color: rgb(233, 233, 233);
-}
-
-.feature_card div{
-    background-color: rgb(255, 255, 255);
-    height: 100px;
-    flex:1 1 250px;
+    flex:0 1 700px;
     padding: 20px 20px ;
     border-radius: 5px;
     border: 2px solid;
@@ -314,10 +299,22 @@ main > section:nth-of-type(5){
     height: 50px;
 }
 
+.feature_card div{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    flex:1 1 250px;
+    padding: 20px 20px ;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: rgb(233, 233, 233);
+}
+
 /* 2. HP Landscape / Tablet Kecil */
 @media (max-width: 768px) {
     .list ,
     .brand {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -327,6 +324,32 @@ main > section:nth-of-type(5){
 
     .hero ,
     .statystics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 822px) {
+    .list ,
+    .brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar_list {
+        width: 100%;
+    }
+
+    .hero ,
+    .statystics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statystics div{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
