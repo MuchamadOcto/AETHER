@@ -196,45 +196,7 @@ main > section:nth-of-type(5){
     flex: 1;
 }
 
-.feature_nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    /* background-color: brown; */
-    width: 100%;
-}
 
-.feature_list{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.feature_list li{
-    background-color: rgb(240, 241, 241);
-    /* padding: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 180px;
-    flex-shrink: 0;
-    flex: 1;
-    height: 25px;
-    width: 180px;
-    border-radius: 20px;
-    font-size: 12px;
-}
-
-.feature_card{
-    display: flex;
-    flex-direction: columbn;
-    justify-content: center;
-    align-self: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-    flex: 1;
-}
 
 .card{
     width: 100%;
@@ -294,21 +256,61 @@ main > section:nth-of-type(5){
 /*======================== 
 * platform.html
 ==========================*/
-.navbar-brand img{
+/* .navbar-brand img{
     width: 50px;
     height: 50px;
+} */
+
+.feature_nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: brown; */
+    width: 100%;
 }
 
+.feature_list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.feature_list li{
+    background-color: rgb(240, 241, 241);
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 180px;
+    flex-shrink: 0;
+    flex: 1;
+    height: 25px;
+    width: 180px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.feature_card{
+    display: flex;
+    flex-direction: columbn;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+}
 .feature_card div{
     background-color: rgb(255, 255, 255);
     height: 100px;
-    flex:1 1 250px;
+    flex:0 1 340px;
     padding: 20px 20px ;
     border-radius: 5px;
     box-sizing: border-box;
     border: 2px solid;
     border-color: rgb(233, 233, 233);
 }
+
 
 /* 2. HP Landscape / Tablet Kecil */
 @media (max-width: 768px) {
