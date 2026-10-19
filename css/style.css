@@ -196,6 +196,23 @@ main > section:nth-of-type(5){
     flex: 1;
 }
 
+main > section:nth-of-type(7){
+    align-self: flex-start; 
+}
+
+main > section:nth-of-type(8){
+    align-self: flex-start; 
+}
+
+main > section:nth-of-type(9){
+    align-self: flex-start;
+}
+
+main > section:nth-of-type(10){
+    align-self: flex-start; 
+    width: 100%;
+}
+
 .card{
     width: 100%;
     border: 2px;
@@ -247,7 +264,7 @@ main > section:nth-of-type(5){
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 50px 0;
     gap: 190px;
 }
 
@@ -379,6 +396,20 @@ main > section:nth-of-type(5){
     margin-left: auto;
     
 }
+
+table{
+    border-color: rgb(7, 7, 7);
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td{
+    border: 1px solid rgb(7, 7, 7);
+    padding: 10px;
+}
+
+
   
 /* 2. HP Landscape / Tablet Kecil */
 @media (max-width: 768px) {
