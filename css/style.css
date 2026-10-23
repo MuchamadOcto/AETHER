@@ -92,7 +92,7 @@ header{
 main{
     background-color: rgb(250, 250, 250);
     /* margin:50px 0; */
-    padding: 20px;
+    /* padding: 20px; */
 
     display: flex;
     justify-content: center;
@@ -217,8 +217,6 @@ main > section:nth-of-type(10){
     width: 100%;
     border: 2px;
     display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
     gap: 60px;
 }
 
@@ -414,6 +412,88 @@ th, td{
     padding: 10px;
 }
 
+/*======================== 
+contact.html
+==========================*/
+
+main > .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    width: 100%;
+    gap: 20px; 
+}
+
+.contact > div{
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+.contact_info > h4{
+    font-weight: normal;
+    color: rgb(189, 179, 179);
+    margin: 20px 0;
+}
+
+.contact_us{
+    padding: 25px 100px 25px 25px;
+    background-color: rgb(9, 11, 34);
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact_us h4{
+    font-weight: normal;
+    color: white;
+
+}
+
+.message{
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(233, 233, 233);
+    width: 298px;
+}
+
+.contact_form button{
+    width: 170px;
+    border-radius: 10px;
+    background-color: rgb(146, 83, 248);
+    border-color: rgb(146, 83, 248);
+}
 
   
 /* 2. HP Landscape / Tablet Kecil */
