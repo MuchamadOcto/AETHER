@@ -280,12 +280,14 @@ main > section:nth-of-type(10){
     justify-content: flex-start;
     /* background-color: brown; */
     width: 100%;
+    
 }
 
 .feature_list{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .feature_list li{
@@ -499,7 +501,6 @@ form{
 }
 
 .checkbox{
-    background-color: chartreuse;
     display: flex;
     width: 400px;
 }
@@ -568,7 +569,10 @@ form{
 
 @media (max-width: 822px) {
     .list ,
-    .brand {
+    .brand,
+    .hero,
+    .statystics,
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -577,16 +581,16 @@ form{
         width: 100%;
     }
 
-    .hero ,
-    .statystics{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .statystics div{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .contact > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
