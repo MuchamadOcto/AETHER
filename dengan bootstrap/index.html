@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AETHER</title>
-    
-    <!--1. memanggil reset untuk menghapus default browser -->
+
+    <!-- rules bootstrap harus di atas css, agar yang dipanggil bootstrap duluan -->
+    <!-- 1. memanggil framework bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--2. memanggil reset untuk menghapus default browser -->
     <link rel="stylesheet" href="../css/reset.css">
 
-    <!--2. memanggil style css untuk mendesain gaya web nya -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!--3. memanggil style css untuk mendesain gaya web nya -->
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
-            <a href="home.html" class="brand">
-                <h1 class="aether">AETHER&mdash;HOME</h1>
-                <h4 class="aether_tagline">High-fidelity visual target &bull; desktop reference</h4>
-                
-            </a>
-                
-            <nav class="navbar_list">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="list">
-                        <li class="logo">
-                            <a href="home.html"><img src="assets/HTML5.png" alt="Logo HTML"></a> 
-                        </li>
-                        <li>
-                            <a href="platform.html">Platform</a>
-                        </li>
-                        <li>
-                            <a href="solution.html">Solution</a>
-                        </li>
-                        <li>
-                            <a href="resources.html">Resources</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <button onclick="window.location.href='#'">GET STARTED</button>
-                        </li>
-                    </ul>
+            <div class="container text-left">
+                <div class="row">
+                    <div class="col">
+                        <h1>AETHER&mdash;HOME</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>High-fidelity visual target &bull; desktop reference</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu bar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img class= "w-50 h-50" src="../assets/HTML5.png" alt="logo html">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"><!--mx-auto untuk memberikan margin horizontal otomatis pada ul,
+                            sehingga menu berada di tengah ruang-->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="platform.html">Platform</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="platform.html">Platform</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="platform.html">Platform</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <form class="d-flex gap-2">
+                            <button class="btn" type="submit">LOGIN</button>
+                            <button class="btn" type="submit">GET STATRTED</button>
+                        </form>
                 </div>
             </nav>
         </header>
         <main>
-            
+
             <!-- 1 -->
             <section class="hero">
                 <article>
@@ -62,13 +83,16 @@
                         <h3 style="font-weight: normal;">Turn complex operations into a scaleble digital workflow</h3>
                     </span>
                     <span id="button">
-                        <button onclick="window.location.href='started.html'" style="background-color: rgb(146, 83, 248);">NOW</button>
-                        <button onclick="window.location.href='started.html'" style="background-color: rgb(65, 59, 70);">VIEW DEMO</button>
+                        <button onclick="window.location.href='started.html'"
+                            style="background-color: rgb(146, 83, 248);">NOW</button>
+                        <button onclick="window.location.href='started.html'"
+                            style="background-color: rgb(65, 59, 70);">VIEW DEMO</button>
                     </span>
                 </article>
                 <span>
-                    <img src="assets/HTML5.png" alt="Logo HTML" style="width: 700px; height: 300px; border-radius: 15px;">
-                </section>
+                    <img src="assets/HTML5.png" alt="Logo HTML"
+                        style="width: 700px; height: 300px; border-radius: 15px;">
+            </section>
             </section>
 
             <!-- 2 -->
@@ -78,7 +102,7 @@
 
             <!-- 3 -->
             <section class="card">
-                <div>NOVA</div> 
+                <div>NOVA</div>
                 <div>VERTEX</div>
                 <div>ORBIT</div>
                 <div>QUANT</div>
@@ -113,27 +137,36 @@
                 </div>
                 <div>
                     <h3>Reporting</h3>
-                    <label>Share clear research</label></div>
+                    <label>Share clear research</label>
+                </div>
             </section>
             <section class="statystics">
                 <div>
                     <h1>10K+</h1>
                     <h4>USERS</h4>
-                </div> 
+                </div>
                 <div>
                     <h1>98%</h1>
                     <h4>UPTIME</h4>
-                </div> 
+                </div>
                 <div>
                     <h1>4.9</h1>
                     <h4>RATING</h4>
-                </div> 
+                </div>
                 <div>
                     <h1>24/7</h1>
                     <H4>SUPPORT</H4>
                 </div>
             </section>
         </main>
-    </div>    
+    </div>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
