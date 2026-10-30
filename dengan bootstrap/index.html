@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <header>
-            <div class="container text-left">
+            <div class="text-left">
                 <div class="row">
                     <div class="col">
                         <h1>AETHER&mdash;HOME</h1>
@@ -38,7 +38,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img class= "w-50 h-50" src="../assets/HTML5.png" alt="logo html">
+                        <img class= "w-25" src="../assets/HTML5.png" alt="logo html">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,13 +55,13 @@
                                 <a class="nav-link" href="platform.html">Platform</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="platform.html">Platform</a>
+                                <a class="nav-link" href="#">Solution</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="platform.html">Platform</a>
+                                <a class="nav-link" href="#">Resources</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="#">Pricing</a>
                             </li>
                         </ul>                        
                     </div>
@@ -75,26 +75,27 @@
         <main>
 
             <!-- 1 -->
-            <section class="hero">
-                <article>
-                    <span id="digital">DIGITAL SaaS</span>
-                    <span>
-                        <h1 style="font-size: 80px;">BUILD. SCALE. DOMINATE</h1>
-                        <h3 style="font-weight: normal;">Turn complex operations into a scaleble digital workflow</h3>
-                    </span>
-                    <span id="button">
-                        <button onclick="window.location.href='started.html'"
+            <section class="hero row bg-success">
+                <div class="col d-flex flex-column">
+                    <article class=" rounded-2 mt-3 d-flex flex-column">
+                        <span class= "bg-info text-white text-center d-inline-block rounded-5 mt-2 ms-2" id="digital" style="width: 150px; height: fit-content;">DIGITAL SaaS</span>
+                        <div>
+                            <h1 style="font-size: 80px;">BUILD. SCALE. DOMINATE</h1>
+                            <h3 style="font-weight: normal;">Turn complex operations into a scaleble digital workflow</h3>
+                        </div>
+                        <span id="button">
+                            <button onclick="window.location.href='started.html'" 
                             style="background-color: rgb(146, 83, 248);">NOW</button>
-                        <button onclick="window.location.href='started.html'"
+                            <button onclick="window.location.href='started.html'" 
                             style="background-color: rgb(65, 59, 70);">VIEW DEMO</button>
-                    </span>
-                </article>
-                <span>
-                    <img src="assets/HTML5.png" alt="Logo HTML"
-                        style="width: 700px; height: 300px; border-radius: 15px;">
+                        </span>
+                    </article>
+                </div>
+                <div class="col">
+                    <img src="../assets/HTML5.png" alt="Logo HTML" style="width: 700px; height: 300px; border-radius: 15px;">
+                </div>
             </section>
-            </section>
-
+            
             <!-- 2 -->
             <section>
                 <h2 style="margin: 15px 15px 15px 0px; color: rgb(189, 179, 179);">TRUSTED BY INNOVATIVE TEAMS</h2>
