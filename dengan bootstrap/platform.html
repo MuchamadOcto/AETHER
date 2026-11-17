@@ -36,7 +36,7 @@
 
             <!-- menu bar -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
-                <div class="container-fluid flex-nowrap">
+                <div class="container-fluid ">
                     <a class="navbar-brand" href="index.html">
                         <img class= "w-25" src="../assets/HTML5.png" alt="logo html">
                     </a>
@@ -45,7 +45,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0"><!--mx-auto untuk memberikan margin horizontal otomatis pada ul,
                             sehingga menu berada di tengah ruang-->
                             <li class="nav-item">
@@ -76,15 +76,15 @@
 
             <!-- 1 -->
             <section class="row row-cols-lg-1 row-cols-xl-2  rounded-4 bg-success">
-                <div class="col d-flex flex-column ">
+                <div class="col d-flex flex-column align-items-start justify-content-center p-5">
                     <article class="mt-3 d-flex flex-column">
                         <span class= "bg-info text-white text-center d-inline-block rounded-5 mt-2 ms-2"
                               id="digital" style="width: 150px; height: fit-content;">
                               DIGITAL SaaS
                         </span>
-                        <div style="width: 500px; height:fit-content;">
+                        <div style="width: 600px; height:fit-content;">
                             <h1 style="font-size: 80px;">Everything your team needs</h1>
-                            <h3 style="font-weight: normal;">Turn complex operations into a scaleble digital workflow</h3>
+                            <h4 class="fw-light mt-5">Analytics&bull;Workflow&bull;Automation&bull;Security</h4>
                         </div>
                         <span class="mt-3 mb-3" id="button">
                             <button class="w-25 rounded-5" onclick="window.location.href='started.html'" 
@@ -95,88 +95,86 @@
                     </article>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
-                    <img class="img-fluid m-3" src="../assets/HTML5.png" alt="Logo HTML" style=" min-width: 500px; height: auto; border-radius: 10px;">
+                    <img class="img-fluid m-3" src="../assets/grafik.jpg" alt="Logo HTML" style=" min-width: 500px; height: auto; border-radius: 10px;">
                 </div>
             </section>
             
             <!-- 2 -->
             <section class="row mt-5">
                 <div class="col">
-                    <h2 style="margin: 15px 15px 15px 0px; color: rgb(189, 179, 179);">TRUSTED BY INNOVATIVE TEAMS</h2>
+                    <h3 style="margin: 15px 15px 15px 0px; color: rgb(189, 179, 179);">FEATURE NAVIGATION</h3>
                 </div>
             </section>
 
             <!-- 3 -->
-            <section class="row row-cols-2 row-cols-md-3 row-cols-lg-5 text-center g-3">
+            <section class="row row-cols-md-2 row-cols-lg-4 text-center g-3">
                 <div class="col" style="max-width: 200px;">
-                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 50px;">NOVA</div>
+                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 30px;">
+                        <p><a href="#" class="link-bg-opacity-50-hover">Analytics</a></p>
+                    </div>
                 </div>   
                 <div class="col" style="max-width: 200px;">
-                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 50px;">VERTEX</div>
+                    <div class="bg-info bg-outline-success rounded-4 d-flex align-items-center justify-content-center" style="height: 30px;">Workflow</div>
                 </div>
                 <div class="col" style="max-width: 200px;">
-                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 50px;">ORBIT</div>
+                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 30px;">Automation</div>
                 </div>
                 <div class="col" style="max-width: 200px;">
-                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 50px;">QUANT</div>
-                </div>
-                <div class="col" style="max-width: 200px;">
-                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 50px;">LUMA</div>
+                    <div class="bg-info rounded-4 d-flex align-items-center justify-content-center" style="height: 30px;">Security</div>
                 </div>
             </section>
 
             <!-- 4 -->
-            <section class="row mt-5">
-                <div class="col">
-                    <h1 class="fw-bold">ONE PLATFORM.MANY POSSIBILITIES.</h1>
+            <section class="row g-3 text-start mt-5 mb-5">
+                <div class="col-md-6 col-lg-6">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <div class="d-flex flex-row gap-2 mb-4">
+                            <p class="bg-primary text-white rounded-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 30px;">01</p>
+                            <h3>Analytics</h3>
+                        </div>                        
+                        <p>See what drives growth</p>
+                    </div>
                 </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <div class="d-flex flex-row gap-2 mb-4">
+                            <p class="bg-primary text-white rounded-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 30px;">02</p>
+                            <h3>Workflow</h3>
+                        </div>
+                        <p>Build repeatable processes</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <div class="d-flex flex-row gap-2 mb-4">
+                            <p class="bg-primary text-white rounded-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 30px;">03</p>
+                            <h3>Automation</h3>
+                        </div>
+                        <p>Let routine work run itself</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <div class="d-flex flex-row gap-2 mb-4">
+                            <p class="bg-primary text-white rounded-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 30px;">04</p>
+                            <h3>Security</h3>
+                        </div>
+                        <p>Control access and risks</p>
+                    </div>
+                </div>
+
             </section>
 
             <!-- 5 -->
-            <section class="row g-3 text-start mt-5 mb-5">
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Analytics</h3>
-                        <p>Real-time insights</p>
-                    </div>
+            <section class="row mt-5">
+                <div class="col">
+                    <h2 class="fw-bold" style="margin: 15px 15px 15px 0px; color: rgb(0, 0, 0);">SIMPLE, SCALABLE, PRICING</h2>
                 </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Workflow</h3>
-                        <p>Automate operations</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Automation</h3>
-                        <p>Reduce manual work</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Security</h3>
-                        <p>Protect every layer</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Integrations</h3>
-                        <p>Connect your stack</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="border border-2 rounded-4 border-danger p-3 h-100">
-                        <h3>Reporting</h3>
-                        <p>Share clear research</p>
-                    </div>
-                </div>
-
             </section>
+
             <!-- 6 -->
             <section class="row text-center">
                 <div class="col-md-3 g-5">
@@ -196,6 +194,98 @@
                     <H4>SUPPORT</H4>
                 </div>
             </section>
+
+            <!-- 7 -->
+             <section class="row mt-5">
+                <div class="col">
+                    <h2 class="fw-bold" style="margin: 15px 15px 15px 0px; color: rgb(0, 0, 0);">PRICING</h2>
+                </div>
+            </section>
+
+            <section class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1 text-left g-3">
+                <div class="col">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <h3 class="mb-2">FREE</h3>
+                        <h1 class="mb-2">$0</h1>
+                        <p>For small teams or individuals</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <div class="d-flex flex-direction-column justify-content-between mb-2">
+                            <h3>PRO</h3>
+                            <h3 class="bg-danger text-white rounded-4 d-flex align-items-center justify-content-center ms-2" style="width: 150px; height: 30px;">POPULAR</h3>
+                        </div>
+                        <h1 class="mb-2">$29/month</h1>
+                        <p>For growing teams</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border border-2 rounded-4 border-danger p-4 h-100">
+                        <h3 class="mb-2">ENTERPRISE</h3>
+                        <h1 class="mb-2">CUSTOM</h1>
+                        <p>For large organizations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8 -->
+            <section class="row mt-5">
+                <div class="col">
+                    <h2 class="fw-bold" style="margin: 15px 15px 15px 0px; color: rgb(0, 0, 0);">COMPARE PLANS</h2>
+                </div>
+            </section>
+
+            <section class="table-responsive">
+                <!-- overflow-x:auto berfungsi untuk menampilkan scroll bar horizontal secara otomatis -->
+                <div style="width:100%; overflow-x:auto;">             
+                    <table class="table table-bordered" style="min-width:1000px;">
+                        <thead>
+                            <tr style="text-align: center;">
+                                <th>Features</th>
+                                <th>FREE</th>
+                                <th>PRO</th>
+                                <th>ENTERPRISE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Projects</td>
+                                <td style="text-align: center;">3</td>
+                                <td style="text-align: center;">50</td>
+                                <td style="text-align: center;">Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics</td>
+                                <td style="text-align: center;">&#10004;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td>Automation</td>
+                                <td style="text-align: center;">&#10008;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td>Advance Security</td>
+                                <td style="text-align: center;">&#10008;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td>Priority Support</td>
+                                <td style="text-align: center;">&#10008;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                                <td style="text-align: center;">&#10004;</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
         </main>
     </div>
     <!-- javascript -->
